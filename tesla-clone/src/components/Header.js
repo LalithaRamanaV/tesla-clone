@@ -3,13 +3,25 @@ import styled from "styled-components"
 
 const Container = styled.div`
 min-height:60px;
+top:0;
+left:0;
+right:0;
 position:fixed;
 display:flex;
 align-items:center;
 padding:0 20px;
 ` 
 const Menu = styled.div`
-
+ display:flex;
+ align-items:center;
+ flex:1;
+ justify-content:center;
+ p{
+  font-weight:600;
+  text-transform:uppercase;
+  padding:0 10px;
+  flex-wrap:nowrap;
+ }
 `
 
 const Header = () => {
