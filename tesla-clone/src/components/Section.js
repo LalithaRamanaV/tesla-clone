@@ -13,7 +13,7 @@ flex-direction:column;
 justify-content:space-between;
 //this is for horizontal
 align-items:center;
-background-image:${props => `url("/images/${props.bgImg}")`}
+background-image:${props => `url("/images/${props.bgImage}")`}
 `
 const ItemText = styled.div`
 padding-top:15vh;
