@@ -4,7 +4,6 @@ import styled from "styled-components"
 const Wrap = styled.div`
 width:100vw;
 height:100vh;
-background-image:url('/images/model-s.jpg');
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
@@ -14,6 +13,7 @@ flex-direction:column;
 justify-content:space-between;
 //this is for horizontal
 align-items:center;
+background-image:${props => `url("/images/${props.bgImg}")`}
 `
 const ItemText = styled.div`
 padding-top:15vh;
@@ -56,20 +56,20 @@ animation:animateDown infinite 1.5s;
 const Buttons = styled.div`
 
 `
-const Section = () => {
+const Section = ({title,description,leftBtnText,rightBtnText,backgroundImg}) => {
   return (
-    <Wrap>
+    <Wrap bgImage={backgroundImg}>
         <ItemText>
-            <h1>Model S</h1>
-            <p>Order online for Touchless delivery</p>
+            <h1>{title}</h1>
+            <p>{description}</p>
         </ItemText>
         <Buttons>
         <ButtonGroup>
             <LeftButton>
-               Custom Order
+               {leftBtnText}
             </LeftButton>
             <RightButton>
-               Existing Inventory
+               {rightBtnText}
             </RightButton>
         </ButtonGroup>
         <DownArrow src="/images/down-arrow.svg">

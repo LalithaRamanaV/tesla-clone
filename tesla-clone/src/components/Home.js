@@ -8,7 +8,13 @@ height:100vh;
 const Home = () => {
   return (
     <Container>
-     <Section/>
+     <Section 
+     title=""
+     description=""
+     backgroundImg=""
+     leftBtnText=""
+     rightBtnText=""
+     />
     </Container>
   )
 }
