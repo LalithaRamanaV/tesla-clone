@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Fade } from "react-awesome-reveal";
 
 const Wrap = styled.div`
+z-index:10;
 width:100vw;
 height:100vh;
 background-size:cover;
@@ -19,6 +20,7 @@ background-image:${props => `url("/images/${props.bgImage}")`}
 const ItemText = styled.div`
 padding-top:15vh;
 text-align:center;
+z-index:10;
 `
 const ButtonGroup=styled.div`
 display:flex;

@@ -4,6 +4,7 @@ import Section from './Section';
 
 const Container = styled.div`
 height:100vh;
+z-index:10;
 `
 const Home = () => {
   return (
