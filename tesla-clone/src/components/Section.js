@@ -39,7 +39,10 @@ cursor:pointer;
 margin:8px;
 `
 const RightButton=styled(LeftButton)`
-
+background-color:white;
+color:black;
+opacity:0.65;
+font-weight:900;
 `
 const DownArrow = styled.div`
 // margin-top:20px;
